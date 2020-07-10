@@ -16,3 +16,4 @@ Efficently and effortlessly create, maintain, re-use sock puppets for OSINT inve
 - Location and timezone services.
 - Keep track of last time puppet was load.
 - Add some screenshot/demo
+- Better documentation 
