@@ -16,7 +16,7 @@ parser.add_argument("--db", help="List the puppets and their corresponding index
 parser.add_argument("-m", metavar='index', help="Modify infomation of a puppet", type=int)
 parser.add_argument("-v", metavar='index',
                     help="View infomation of a puppet", type=int)
-parser.add_argument("-d", metavar='index',
+parser.add_argument("--remove", metavar='index',
                     help="Remove a puppet", type=int)
 # III. Op
 parser.add_argument("-l", metavar='index', help="Load a puppet", type=int)
@@ -45,7 +45,7 @@ if __name__ == "__main__":
         driver = init_webdriver(puppet)
         load_cookies(driver,puppet)
         edit_info(puppet)
-    elif args.d:
+    elif args.remove:
         try:
             name = profiles[args.d]
             remove(name)

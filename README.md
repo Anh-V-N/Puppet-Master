@@ -2,6 +2,10 @@
 
 Efficently and effortlessly create, maintain, re-use sock puppets for OSINT investigations and anonymity in a consistent fashion.
 
+TODO 
+- Location and timezone services.
+- Keep track of the age of puppets.
+- Add browser extensions.
 ## Purpose 
 - The goal of this project is to help OSINT investigators to easily create and store sock puppets. This script can automatically and consistently prepare their browser and system accordingly to each puppet based on stored information.
 - The idea was inspired by [this talk](https://www.youtube.com/watch?v=v8EP6xOcB8M) by Zhuang Weiliang @egomy_cs - I highly recommend to watch it.
@@ -64,7 +68,7 @@ It will take a few seconds for the script to prepare the browser according to pu
 You can add/modify information by command add <key:value> 
 - If the key exists it will be updated, else a new field will be added e.g. add location:Earth
 ### Adding cookies to puppets
-In editing mode, type cookies.A new instance of firefox will be initiated. Simply navigate to the site, sign up/log in 
+In editing mode, type cookies.A new instance of firefox will be initiated. Simply navigate to the site, copy and paste the url to the prompt then sign up/log in. After loging in, press enter in the prompt and the script will collect the cookies.
 
 ### 
 
@@ -72,8 +76,5 @@ In editing mode, type cookies.A new instance of firefox will be initiated. Simpl
 <img src='./screenshots/Screenshot from 2020-07-10 22-15-05.png'>
 <img src='./screenshots/Screenshot from 2020-07-10 22-19-07.png'>
 
-### TODO 
-- Location and timezone services.
-- Keep track of the age of puppets.
-- Add browser extensions.
+
 
