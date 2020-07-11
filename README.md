@@ -4,15 +4,24 @@ Efficently and effortlessly create, maintain, re-use sock puppets for OSINT inve
 
 ## Purpose 
 - The goal of this project is to help OSINT investigators to easily create and store sock puppets. This script can automatically and consistently prepare their browser and system accordingly to each puppet based on stored information.
-- The idea was inspired by [this talk](https://www.youtube.com/watch?v=v8EP6xOcB8M) - I highly recommended to watch it.
-- This script automates some parts of it.
+- The idea was inspired by [this talk](https://www.youtube.com/watch?v=v8EP6xOcB8M) by Zhuang Weiliang @egomy_cs - I highly recommended to watch it.
+- This script automates some parts of it and reduce the hassle of keeping track, managing puppets and their information.
 ## Requirement 
-- Python 3
-- Requests 
-- Selenium
-- Firefox 
+- [Python 3.x.x](https://www.python.org/downloads/)
+- [Firefox](https://www.mozilla.org/en-CA/firefox/all/#product-desktop-release) 
 - [geckodriver](https://github.com/mozilla/geckodriver/releases)
+## Install
+Download and install Python3, Firefox and geckodriver (geckodriver must be put in Path)
+<pre><code>
+python3 pip -r requirements.txt
+</code></pre>
+
 ## Features
+- Automatically or manually create new puppet profiles
+- Edit/add puppet's information as needed
+- Cookies added to puppet profile will be loaded automatically everytime you load the puppet
+- Easily maintain and manage multiple puppets
+
 <pre><code>
 user@Ubuntu:~/Desktop/code/Puppet-Master$ ./puppet-master.py -h
 usage: puppet-master.py [-h] [-i] [-r] [-db] [-m index] [-v index] [-d index]
@@ -32,9 +41,11 @@ optional arguments:
   -l index      Load a puppet
 </code></pre>
 
+## Screenshots
+
 ### TODO 
 - Location and timezone services.
 - Keep track of the age of puppets.
 - Add browser extensions.
-- Add some screenshot/demo
+- Add some screenshots/demo
 - Better documentation 

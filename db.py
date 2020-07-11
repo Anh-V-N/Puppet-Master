@@ -6,7 +6,7 @@ import os
 import random
 from cmd import Cmd
 from operation import save_puppet,new_cookies
-
+import init
 # I. List db
 profiles = {}
 def list_db():
@@ -23,6 +23,8 @@ def index_db():
         ls = os.listdir('./puppets')
         if len(ls) < 1:
             print('[!] There is no record! Please create a new one.')
+            print('Automatically generating a random puppet! Please wait..')
+            init.init_puppet()
             sys.exit()
         index = 1
         for record in ls:
@@ -31,6 +33,8 @@ def index_db():
             index += 1     
     except FileNotFoundError:
         print('[!] There is no record! Please create a new one.')
+        print('Automatically generating a random puppet! Please wait..')
+        init.init_puppet()
         sys.exit()
 
 # II. Load record
