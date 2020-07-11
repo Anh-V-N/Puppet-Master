@@ -70,14 +70,12 @@ You can add/modify information by command add <key:value>
 ### Adding cookies to puppets
 In editing mode, type cookies.A new instance of firefox will be initiated. Simply navigate to the site, copy and paste the url to the prompt then sign up/log in. After loging in, press enter in the prompt and the script will collect the cookies.
 
-### 
 
 ## Screenshots
 <img src='./screenshots/Screenshot1.png'>
 <img src='./screenshots/Screenshot2.png'>
 <img src='./screenshots/Screenshot3.png'>
 <img src='./screenshots/Screenshot4.png'>
-<img src='./screenshots/Screenshot5.png'>
 
 
 
