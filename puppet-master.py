@@ -12,7 +12,7 @@ parser.add_argument(
 parser.add_argument("-r","--random", help = "Generate a random puppet", action="store_true")
 
 # II. DB
-parser.add_argument("-db", help="List the puppets and their corresponding index", action="store_true")
+parser.add_argument("--db", help="List the puppets and their corresponding index", action="store_true")
 parser.add_argument("-m", metavar='index', help="Modify infomation of a puppet", type=int)
 parser.add_argument("-v", metavar='index',
                     help="View infomation of a puppet", type=int)
