@@ -10,6 +10,8 @@ from selenium.webdriver.common.action_chains import ActionChains
 
 
 def init_webdriver(puppet):
+    name = puppet['name']
+    print(f'Loading {name}... ')
     useragent = puppet['useragent']
     profile = webdriver.FirefoxProfile()
     profile.set_preference("general.useragent.override", useragent)

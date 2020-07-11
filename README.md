@@ -73,8 +73,9 @@ In editing mode, type cookies.A new instance of firefox will be initiated. Simpl
 ### 
 
 ## Screenshots
-<img src='./screenshots/Screenshot from 2020-07-10 22-15-05.png'>
-<img src='./screenshots/Screenshot from 2020-07-10 22-19-07.png'>
+<img src='./screenshots/Screenshot1.png'>
+<img src='./screenshots/Screenshot2.png'>
+<img src='./screenshots/Screenshot3.png'>
 
 
 
