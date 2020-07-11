@@ -11,9 +11,30 @@ Efficently and effortlessly create, maintain, re-use sock puppets for OSINT inve
 - Requests 
 - Selenium
 - Firefox 
-- geckodrive
+- [geckodriver][https://github.com/mozilla/geckodriver/releases]
+## Features
+<pre><code>
+user@Ubuntu:~/Desktop/code/Puppet-Master$ ./puppet-master.py -h
+usage: puppet-master.py [-h] [-i] [-r] [-db] [-m index] [-v index] [-d index]
+                        [-l index]
+
+Specify an optional argument with the index corresponding to a puppet to
+interact with it
+
+optional arguments:
+  -h, --help    show this help message and exit
+  -i, --init    Set up new puppet
+  -r, --random  Generate a random puppet
+  -db           List the puppets and their corresponding index
+  -m index      Modify infomation of a puppet
+  -v index      View infomation of a puppet
+  -d index      Remove a puppet
+  -l index      Load a puppet
+</code></pre>
+
 ### TODO 
 - Location and timezone services.
-- Keep track of last time puppet was load.
+- Keep track of the age of puppets.
+- Add browser extensions.
 - Add some screenshot/demo
 - Better documentation 
