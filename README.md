@@ -1,6 +1,6 @@
 # Puppet-Master
 
-Efficently and effortlessly create, maintain, re-use sock puppets for OSINT investigations in a consistent fashion.
+Efficently and effortlessly create, maintain, re-use sock puppets for OSINT investigations and anonymity in a consistent fashion.
 
 ## Purpose 
 - The goal of this project is to help OSINT investigators to easily create and store sock puppets. This script can automatically and consistently prepare their browser and system accordingly to each puppet based on stored information.
@@ -41,6 +41,26 @@ optional arguments:
   -d index      Remove a puppet
   -l index      Load a puppet
 </code></pre>
+### What is a sock puppet?
+It is an online identity that is not supposed to lead back to you.
+## How does it work?
+- Saved puppet's information are stored in json format in folder ./puppets under format puppet's name.json
+
+### Creating sock puppet
+- There are two ways to create puppets, either by randomly generating using -r or inputing the puppet information manually using -i. Randomized puppet's basic information such as name, date of birth is pulled from namefake.com api. This api also provide an randomized email address and its non-password inbox from namefake.com. Note: I have tried to used this email address to facebook and it worked. This can change at any point. 
+- Puppet's browser useragent is randomly pulled from useragents.txt, I have included some of the well-known useragents in this text file and you can modify accordingly to your liking.
+### Modifying puppet
+Run the script with -m to enter editing mode. You can add/modify information by command add <key:value>
+### Using puppet
+<pre><code> python3 puppet-master.py -l index </code></pre>
+Each puppet is assigned an index number. To view the index: <pre><code> python3 puppet-master.py -l index </code></pre>
+ 
+
+### Adding cookies to puppets
+In editing mode, type cookies, an instance of firefox with will be opened 
+
+### Storing sock puppets
+### 
 
 ## Screenshots
 <img src='./screenshots/Screenshot from 2020-07-10 22-15-05.png'>
