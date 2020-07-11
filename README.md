@@ -5,7 +5,8 @@ Efficently and effortlessly create, maintain, re-use sock puppets for OSINT inve
 ## Purpose 
 - The goal of this project is to help OSINT investigators to easily create and store sock puppets. This script can automatically and consistently prepare their browser and system accordingly to each puppet based on stored information.
 - The idea was inspired by [this talk](https://www.youtube.com/watch?v=v8EP6xOcB8M) by Zhuang Weiliang @egomy_cs - I highly recommend to watch it.
-- This script automates some parts of it and reduce the hassle of keeping track, managing puppets and their information.
+- This script automates some parts of it and reduces the hassle of keeping track, managing puppets and their information.
+- It aims to keep puppet's activities as consistent as possible.
 ## Requirements 
 - [Python 3.x.x](https://www.python.org/downloads/)
 - [Firefox](https://www.mozilla.org/en-CA/firefox/all/#product-desktop-release) 
