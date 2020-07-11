@@ -31,7 +31,7 @@ python3 pip -r requirements.txt
 
 <pre><code>
 user@Ubuntu:~/Desktop/code/Puppet-Master$ ./puppet-master.py -h
-usage: puppet-master.py [-h] [-i] [-r] [-db] [-m index] [-v index] [-d index]
+usage: puppet-master.py [-h] [-i] [-r] [--db] [-m index] [-v index] [--remove index]
                         [-l index]
 
 Specify an optional argument with the index corresponding to a puppet to
@@ -58,7 +58,7 @@ It is an online identity that is not supposed to lead back to you.
 ### Storing sock puppets
 - Saved puppet's information are stored in json format in folder ./Puppets under format puppet's name.json
 ### Using puppet
-Before starting to use a puppet, you need to know its corresponding index. Each puppet is assigned an index number. To view the index: <pre><code> python3 puppet-master.py -db </code></pre>
+Before starting to use a puppet, you need to know its corresponding index. Each puppet is assigned an index number. To view the index: <pre><code> python3 puppet-master.py --db </code></pre>
 Load a specific puppet
 <pre><code> python3 puppet-master.py -l index </code></pre>
 It will take a few seconds for the script to prepare the browser according to puppet's stored information(user-agent and cookies). Once the browser is ready, the script will enter editing mode.
