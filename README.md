@@ -74,5 +74,4 @@ In editing mode, type cookies.If no instance of firefox has been initiated, once
 - Location and timezone services.
 - Keep track of the age of puppets.
 - Add browser extensions.
-- Add some screenshots/demo
-- Better documentation 
+
