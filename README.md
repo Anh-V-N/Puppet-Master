@@ -4,14 +4,14 @@ Efficently and effortlessly create, maintain, re-use sock puppets for OSINT inve
 
 ## Purpose 
 - The goal of this project is to help OSINT investigators to easily create and store sock puppets. This script can automatically and consistently prepare their browser and system accordingly to each puppet based on stored information.
-- The idea was inspired by https://www.youtube.com/watch?v=v8EP6xOcB8M 
+- The idea was inspired by [this talk](https://www.youtube.com/watch?v=v8EP6xOcB8M) - I highly recommended to watch it.
 - This script automates some parts of it.
 ## Requirement 
 - Python 3
 - Requests 
 - Selenium
 - Firefox 
-- [geckodriver][https://github.com/mozilla/geckodriver/releases]
+- [geckodriver](https://github.com/mozilla/geckodriver/releases)
 ## Features
 <pre><code>
 user@Ubuntu:~/Desktop/code/Puppet-Master$ ./puppet-master.py -h
