@@ -41,7 +41,7 @@ optional arguments:
   -d index      Remove a puppet
   -l index      Load a puppet
 </code></pre>
-### What is a sock puppet?
+## What is a sock puppet?
 It is an online identity that is not supposed to lead back to you.
 ## How does it work?
 - Saved puppet's information are stored in json format in folder ./puppets under format puppet's name.json
@@ -49,12 +49,13 @@ It is an online identity that is not supposed to lead back to you.
 ### Creating sock puppet
 - There are two ways to create puppets, either by randomly generating using -r or inputing the puppet information manually using -i. Randomized puppet's basic information such as name, date of birth is pulled from namefake.com api. This api also provide an randomized email address and its non-password inbox from namefake.com. Note: I have tried to used this email address to facebook and it worked. This can change at any point. 
 - Puppet's browser useragent is randomly pulled from useragents.txt, I have included some of the well-known useragents in this text file and you can modify accordingly to your liking.
-### Modifying puppet
-Run the script with -m to enter editing mode. You can add/modify information by command add <key:value>
 ### Using puppet
+Before starting to use a puppet, you need to know its corresponding index. Each puppet is assigned an index number. To view the index: <pre><code> python3 puppet-master.py -db </code></pre>
+Load a specific puppet
 <pre><code> python3 puppet-master.py -l index </code></pre>
-Each puppet is assigned an index number. To view the index: <pre><code> python3 puppet-master.py -l index </code></pre>
- 
+### Modifying puppet
+- Run the script with -m to enter editing mode. You can add/modify information by command add <key:value> 
+- If the key exists it will be updated, else a new field will be added e.g. add location:Earth
 
 ### Adding cookies to puppets
 In editing mode, type cookies, an instance of firefox with will be opened 
