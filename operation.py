@@ -56,12 +56,12 @@ def new_cookies(puppet):
 # VI. Write puppet info to json file follow puppet's name
 def save_puppet(puppet):
     filename = puppet.get("name")
-    saveto = f'./puppets/{filename}.json'
+    saveto = f'./Puppets/{filename}.json'
     try:
         with open(saveto, 'w') as db:
             json.dump(puppet, db, indent=2)
     except FileNotFoundError:
-        os.makedirs('./puppets')
+        os.makedirs('./Puppets')
         with open(saveto, 'w') as db:
             json.dump(puppet, db, indent=2)
 

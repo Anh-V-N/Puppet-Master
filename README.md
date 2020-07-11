@@ -38,14 +38,14 @@ Specify an optional argument with the index corresponding to a puppet to
 interact with it
 
 optional arguments:
-  -h, --help    show this help message and exit
-  -i, --init    Set up new puppet
-  -r, --random  Generate a random puppet
-  -db           List the puppets and their corresponding index
-  -m index      Modify infomation of a puppet
-  -v index      View infomation of a puppet
-  -d index      Remove a puppet
-  -l index      Load a puppet
+  -h, --help      show this help message and exit
+  -i, --init      Set up new puppet
+  -r, --random    Generate a random puppet
+  --db            List the puppets and their corresponding index
+  -m index        Modify infomation of a puppet
+  -v index        View infomation of a puppet
+  --remove index  Remove a puppet
+  -l index        Load a puppet
 </code></pre>
 ## What is a sock puppet?
 It is an online identity that is not supposed to lead back to you.
@@ -56,7 +56,7 @@ It is an online identity that is not supposed to lead back to you.
 - Updated: facebook seems to have caught up with this.
 - Puppet's browser useragent is randomly pulled from useragents.txt, I have included some of the well-known useragents in this text file and you can modify accordingly to your liking.
 ### Storing sock puppets
-- Saved puppet's information are stored in json format in folder ./puppets under format puppet's name.json
+- Saved puppet's information are stored in json format in folder ./Puppets under format puppet's name.json
 ### Using puppet
 Before starting to use a puppet, you need to know its corresponding index. Each puppet is assigned an index number. To view the index: <pre><code> python3 puppet-master.py -db </code></pre>
 Load a specific puppet

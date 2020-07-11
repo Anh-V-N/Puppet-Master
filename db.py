@@ -20,7 +20,7 @@ def list_db():
 def index_db():
     global profiles
     try:
-        ls = os.listdir('./puppets')
+        ls = os.listdir('./Puppets')
         if len(ls) < 1:
             print('[!] There is no record! Please create a new one.')
             print('Automatically generating a random puppet! Please wait..')
@@ -39,7 +39,7 @@ def index_db():
 
 # II. Load record
 def load(puppet):
-    filename = f'./puppets/{puppet}.json'
+    filename = f'./Puppets/{puppet}.json'
     try:
         with open(filename,'r') as db:      
             puppet = json.load(db)
@@ -111,7 +111,7 @@ def edit_info(ori_puppet):
 
 # V. Remove record
 def remove(name):
-    filename = f'./puppets/{name}.json'
+    filename = f'./Puppets/{name}.json'
     try:
         os.remove(filename)
         print(f'[+] Removed puppet {name}')
