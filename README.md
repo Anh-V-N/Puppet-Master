@@ -51,7 +51,7 @@ optional arguments:
 It is an online identity that is not supposed to lead back to you.
 ## How does it work?
 ### Creating sock puppet
-- There are two ways to create puppets, either by randomly generating using -r or inputing the puppet information manually using -i. Randomized puppet's basic information such as name, date of birth is pulled from namefake.com api. This api also provide an randomized email address and its non-password inbox from namefake.com that lasts for 70+ days. 
+- There are two ways to create puppets, either by randomly generating using -r or inputing the puppet information manually using -i. Randomized puppet's basic information such as name, date of birth is pulled from namefake.com api. This api also provide an randomized email address and its non-password inbox from namefake.com that can lasts for 70+ days. However this is only recommended for disposable puppets that you don't mind losing access to, for persitent puppet you should spend time to register proper email address. 
 - Note: I have tried to used this email address to register accounts on some social media sites including facebook and twitter and it worked. However, this can change at any point.
 - Updated: facebook seems to have caught up with this.
 - Puppet's browser useragent is randomly pulled from useragents.txt, I have included some of the well-known useragents in this text file and you can modify accordingly to your liking.
