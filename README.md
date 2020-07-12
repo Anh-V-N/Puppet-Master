@@ -63,8 +63,8 @@ Load a specific puppet
 <pre><code> python3 puppet-master.py -l index </code></pre>
 It will take a few seconds for the script to prepare the browser according to puppet's stored information(user-agent and cookies). Once the browser is ready, the script will enter editing mode.
 ### Modifying puppet
-- Either load the puppet or run the script with -m to enter editing mode.
-<pre><code> python3 puppet-master.py -l index </code></pre>
+- Either load the puppet or run the script with -m to enter editing mode - an interactive shell for editing puppet information purpose.
+<pre><code> python3 puppet-master.py -m index </code></pre>
 You can add/modify information by command add <key:value> 
 - If the key exists it will be updated, else a new field will be added e.g. add location:Earth
 ### Adding cookies to puppets
